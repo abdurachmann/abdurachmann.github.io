@@ -1,0 +1,210 @@
+@import '~materialize-css/dist/css/materialize.min.css';
+
+*, *:before, *:after {
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #b71c1c;
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.brand-logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu:hover {
+    font-weight: bold;
+}
+
+.competition {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.matches {
+    letter-spacing: 5px;
+}
+
+.match {
+    border-radius: 20px;
+    font-size: 1.2em;
+    box-shadow: 2px 0px 20px 1px #b71c1c;
+    margin-bottom: 50px;
+}
+
+.dropdown-trigger {
+    border: 1px solid black;
+}
+
+.leagues {
+    padding-top: 10px;
+}
+
+.home-team, .away-team {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.score-home, .score-away ,.score {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.logo-standing {
+    width: 30px;
+}
+
+.dropdown-trigger {
+    padding: 10px;
+}
+
+.dropdown-trigger:hover {
+    background-color: #b71c1c;
+}
+
+/* team */
+.team-card, .favorite-card {
+    box-shadow: 2px 0px 20px 1px #b71c1c;
+}
+
+.cover-team {
+    background: url(/src/images/stadium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.badge-team {
+    margin-top: 10px;
+    width: 60px;
+}
+
+.official-btn {
+    margin-bottom: 10px;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #b71c1c;
+}
+
+.tabs .indicator {
+    background-color: #fdd835;
+}
+
+.toast {
+    background-color: #b71c1c;
+}
+
+.collapsible-body {
+    transition-delay: 100s;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+    #toast-container {
+        left: 70%;
+        bottom: 60%;
+    }
+
+    .logo-standing {
+        width: 35px;
+    }
+
+    .matches {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #toast-container {
+        bottom: 80%;
+        text-align: center;
+    }
+
+    .logo-standing {
+        width: 35px;
+    }
+
+    .matches {
+        font-size: 1.8em;
+    }
+    .competition {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+}
+
+#table-fav {
+    padding: 30px;
+}
+
+.image-player {
+    width: 70%;
+    margin-left: 130px;
+    margin-bottom: 0px;
+}
+
+.desc-fav {
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo-fav {
+    width: 17%;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+    .image-player {
+        width: 100%;
+        margin-left: 0px;
+    }   
+
+    .desc-fav {
+        font-size: 2.2em;
+    }
+
+    .logo-fav {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .image-player {
+        width: auto;
+        height: 100%;
+        margin-left: 0px;
+    } 
+    .desc-fav {
+        font-size: 1.8em;
+    }
+    .logo-fav {
+        width: 30%;
+    }
+}
